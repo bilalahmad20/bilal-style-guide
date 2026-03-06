@@ -162,6 +162,71 @@ const occasionGuides = [
   { name: "Special / Formal (Eid, Weddings)", icon: "✨", level: "Formal / Traditional", formula: "Suit or shalwar kameez in palette colors + polished accessories", doList: ["Navy or charcoal suit", "Deep navy/forest green kurta", "Cognac shoes + matching belt", "Cream kurta + dark waistcoat for Eid", "Off-white dress shirt"], dontList: ["Black suit (charcoal is better)", "Bright pastel kurtas", "Black shoes", "Mismatched accessories", "Overly trendy pieces"] },
 ];
 
+// ===================== PHOTO IDs =====================
+// Direct Unsplash CDN — stable, no API key needed
+// URL: https://images.unsplash.com/photo-{ID}?w=200&h=240&fit=crop&auto=format
+
+const PHOTO_IDS = {
+  "Quarter-Zip Sweater":        "b1YG4_8wRYs",
+  "Crew-Neck Sweater":          "UKSoi-H2n_k",
+  "V-Neck Merino Sweater":      "UKSoi-H2n_k",
+  "Roll / Turtleneck":          "T_YOYS3mOhc",
+  "Knit Polo Shirt":            "9QW52RyBLao",
+  "Henley (Long-Sleeve)":       "KZ0uH23koWQ",
+  "Flannel Shirt":              "mVNMC7eSq7E",
+  "Crew-Neck T-Shirt":          "kkj9iKxsdhY",
+  "Zip-Up Hoodie":              "NXZFzJwE6Sg",
+  "Sweatshirt (Crewneck)":      "7cERndkOyDw",
+  "Graphic / Logo Tee":         "Ilg0getpBYE",
+  "Athletic Piqué Polo":        "bAk6aJSIohU",
+  "Dark Wash Jeans":            "ItqFmSxKnIg",
+  "Chino Shorts":               "2FKTyJqfWX8",
+  "Knit Cardigan":              "UKSoi-H2n_k",
+  "Harrington Jacket":          "yLR6BYNlXaM",
+  "Bomber Jacket":              "yLR6BYNlXaM",
+  "Brown Leather Jacket":       "3MoLgnpW1Jk",
+  "Black Leather Jacket":       "Zn1SO-aYZgY",
+  "White Leather Sneakers":     "uIWfpSURyeM",
+  "Brown Suede Loafers":        "b_L9iE1DUHo",
+  "Chelsea Boots (Brown)":      "miNo_SFAcws",
+  "Desert Boots (Suede)":       "miNo_SFAcws",
+  "Trail / Running Sneakers":   "HGgsNCbH2Rs",
+  "Brown Leather Work Bag":     "2_tjJJqsZms",
+  "Wool Beanie Hat":            "rBVSAlQBS7E",
+  "Tortoiseshell Sunglasses":   "QsBTYwxjzUU",
+  "Brown Leather Belt":         "NKjIT7u5nXE",
+  "Pocket Square":              "lQQpyVvW0l0",
+  "Watch (Warm Metal)":         "KnrOfQGuPYo",
+};
+
+const ITEM_EMOJIS = {
+  "Oxford Button-Down (OCBD)":       "👔",
+  "Linen Shirt":                     "👕",
+  "Slim Tapered Chinos":             "👖",
+  "Corduroy Trousers":               "👖",
+  "Wool Trousers":                   "👖",
+  "Baggy / Wide-Leg Jeans":          "👖",
+  "Skinny Jeans":                    "👖",
+  "Cargo Pants":                     "👖",
+  "Wool Overcoat":                   "🧥",
+  "Unstructured Blazer":             "👔",
+  "Quilted Gilet / Vest":            "🦺",
+  "Rain Jacket":                     "🌧️",
+  "Oversized Puffer / Down Jacket":  "🧥",
+  "Derby / Oxford Shoes":            "👞",
+  "Brown Leather Monk Strap":        "👞",
+  "Black Dress Shoes":               "👞",
+  "Chunky / Dad Sneakers":           "👟",
+  "Leather Gloves":                  "🧤",
+  "Wool Scarf":                      "🧣",
+  "Silver / Steel Watch":            "⌚",
+  "Black Leather Accessories":       "🖤",
+};
+
+const CATEGORY_EMOJIS = {
+  "Tops": "👕", "Bottoms": "👖", "Outerwear": "🧥", "Footwear": "👟", "Accessories": "⌚",
+};
+
 // ===================== COMPONENTS =====================
 
 function ColorSwatch({ hex, size = 48 }) {
@@ -175,10 +240,28 @@ function ColorSwatch({ hex, size = 48 }) {
   );
 }
 
-function ClothingRefImage({ item }) {
-  const [visible, setVisible] = useState(true);
-  if (!visible) return null;
-  const src = `https://source.unsplash.com/featured/200x240/?${item.imgQuery}&sig=${item.sig}`;
+function ClothingRefImage({ item, category }) {
+  const [errored, setErrored] = useState(false);
+  const photoId = PHOTO_IDS[item.name];
+  const isAvoid = item.verdict === "avoid";
+
+  const fallbackEmoji = ITEM_EMOJIS[item.name] || CATEGORY_EMOJIS[category] || "👔";
+
+  if (!photoId || errored) {
+    return (
+      <div style={{
+        flexShrink: 0, width: 90, height: 110, borderRadius: 10,
+        backgroundColor: isAvoid ? "#FFF0F0" : "#F5F2EE",
+        border: `1px solid ${isAvoid ? "#FFCDD2" : "#E8E2DA"}`,
+        display: "flex", alignItems: "center", justifyContent: "center",
+        fontSize: 38,
+      }}>
+        {fallbackEmoji}
+      </div>
+    );
+  }
+
+  const src = `https://images.unsplash.com/photo-${photoId}?w=200&h=240&fit=crop&auto=format&q=80`;
   return (
     <div style={{ flexShrink: 0, width: 90, position: "relative" }}>
       <img
@@ -187,17 +270,17 @@ function ClothingRefImage({ item }) {
         style={{
           width: 90, height: 110, borderRadius: 10, objectFit: "cover",
           display: "block", backgroundColor: "#F5F0EB",
-          filter: item.verdict === "avoid" ? "grayscale(50%) brightness(0.9)" : "none",
+          filter: isAvoid ? "grayscale(50%) brightness(0.9)" : "none",
         }}
-        onError={() => setVisible(false)}
+        onError={() => setErrored(true)}
       />
-      {item.verdict === "avoid" && (
+      {isAvoid && (
         <div style={{
           position: "absolute", inset: 0, borderRadius: 10,
           backgroundColor: "rgba(196,30,58,0.18)",
           display: "flex", alignItems: "center", justifyContent: "center",
         }}>
-          <div style={{ fontSize: 20, lineHeight: 1 }}>✕</div>
+          <div style={{ fontSize: 20 }}>✕</div>
         </div>
       )}
     </div>
@@ -474,7 +557,7 @@ export default function Home() {
                       border: item.verdict === "avoid" ? "2px solid #FFCDD2" : "2px solid #C8E6C9",
                       display: "flex", gap: 14, alignItems: "flex-start",
                     }}>
-                      <ClothingRefImage item={item} />
+                      <ClothingRefImage item={item} category={cat.category} />
                       <div style={{ flex: 1, minWidth: 0 }}>
                         <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 5, flexWrap: "wrap" }}>
                           <span style={{
