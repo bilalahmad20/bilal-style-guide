@@ -1,6 +1,5 @@
 import { useState, useRef, useCallback, useEffect } from "react";
 import Head from "next/head";
-import "../styles/globals.css";
 
 const SECTIONS = ["Colors", "Avoid", "Clothing", "Outfits", "Occasions", "Analyzer"];
 
