@@ -68,77 +68,77 @@ const clothingTypes = [
   {
     category: "Tops",
     items: [
-      { name: "Quarter-Zip Sweater", verdict: "wear", qty: "3–4", bestColors: ["#2D5016", "#1B2A4A", "#722F37", "#4A4A44"], desc: "Your signature piece. Knit or fleece, sitting just below the belt. Layer over Oxford shirts or wear solo. Forest green and navy are your go-to colorways.", imgQuery: "quarter+zip+sweater,menswear", sig: 1 },
-      { name: "Crew-Neck Sweater", verdict: "wear", qty: "2–3", bestColors: ["#9A6324", "#008080", "#CC5500", "#722F37"], desc: "Merino wool or lambswool. Layer over collared shirts for smart casual. Slim fit — skim, not cling. Cognac and rust are standout Deep Autumn choices.", imgQuery: "crew+neck+sweater,menswear,knitwear", sig: 2 },
-      { name: "V-Neck Merino Sweater", verdict: "wear", qty: "1–2", bestColors: ["#1B2A4A", "#2D5016", "#3B2314"], desc: "Perfect over an Oxford button-down — the V shows the collar underneath. Slim fit merino in deep palette colors. Slightly more formal than the crew-neck.", imgQuery: "v+neck+merino+sweater,menswear", sig: 3 },
-      { name: "Roll / Turtleneck", verdict: "wear", qty: "1–2", bestColors: ["#3B2314", "#4A4A44", "#1B2A4A"], desc: "Elevated winter piece. Looks incredible under blazers and overcoats — the roll-neck adds structure and warmth. Dark chocolate, charcoal, and navy are your best.", imgQuery: "turtleneck+sweater,men,rollneck", sig: 4 },
-      { name: "Knit Polo Shirt", verdict: "wear", qty: "2–3", bestColors: ["#1B2A4A", "#2D5016", "#722F37"], desc: "Not the sporty piqué — a knit polo is refined and elevated. Collar adds polish without a full shirt. Great for conferences, dinners, and elevated office days.", imgQuery: "knit+polo+shirt,men,luxury", sig: 5 },
-      { name: "Henley (Long-Sleeve)", verdict: "wear", qty: "2–3", bestColors: ["#4A4A44", "#2D5016", "#F5F0E0"], desc: "The step-up from a plain tee. Button placket adds detail without fuss. Perfect for Dublin pub nights, casual dinners, and smart weekends.", imgQuery: "henley+shirt,men,long+sleeve", sig: 6 },
-      { name: "Oxford Button-Down (OCBD)", verdict: "wear", qty: "3–4", bestColors: ["#F5F0E0", "#C8AD7F", "#8A9A5B"], desc: "Your most versatile 'dress-up' shirt. Works under blazers, tucked with chinos, or untucked with jeans. Off-white and warm tones are your best picks.", imgQuery: "oxford+button+down+shirt,men,smart+casual", sig: 7 },
-      { name: "Flannel Shirt", verdict: "wear", qty: "2", bestColors: ["#722F37", "#2D5016", "#9A6324"], desc: "Dublin autumn essential. Warm plaid patterns in burgundy-green or brown tartans are a Deep Autumn dream. Wear open over a tee or buttoned up with chinos.", imgQuery: "flannel+shirt,men,plaid,autumn", sig: 8 },
-      { name: "Linen Shirt", verdict: "wear", qty: "2", bestColors: ["#F5F0E0", "#C8AD7F", "#CC5500"], desc: "Summer essential for Dublin's warmer months. Cream, tan, or rust in a slim fit. Slightly relaxed is fine — roll the sleeves. Avoid stiff, heavily pressed linen.", imgQuery: "linen+shirt,men,summer,beige", sig: 9 },
-      { name: "Crew-Neck T-Shirt", verdict: "wear", qty: "5–7", bestColors: ["#F5F0E0", "#556B2F", "#CC5500", "#722F37", "#2D5016", "#4A4A44"], desc: "Your casual base layer. Invest in structured, heavier cotton (180–200gsm). Choose warm palette colors — cream, olive, rust, burgundy. Avoid grey.", imgQuery: "crew+neck+tshirt,men,quality,cotton", sig: 10 },
-      { name: "Zip-Up Hoodie", verdict: "wear", qty: "1–2", bestColors: ["#4A4A44", "#2D5016", "#556B2F"], desc: "Keep it clean and slim — no logo, no print. Wear under your overcoat or bomber on casual Dublin days. Charcoal and olive are your best picks.", imgQuery: "zip+up+hoodie,men,slim,clean", sig: 11 },
-      { name: "Sweatshirt (Crewneck)", verdict: "wear", qty: "2", bestColors: ["#4A4A44", "#556B2F", "#722F37"], desc: "Weekend casual. French terry or heavyweight cotton. Relaxed but not oversized — should still show your shape. No large graphics.", imgQuery: "crewneck+sweatshirt,men,minimal,cotton", sig: 12 },
-      { name: "Graphic / Logo Tee", verdict: "avoid", qty: "0", bestColors: [], desc: "Large graphics and brand logos read as untidy and juvenile. A clean, warm-colored tee always looks more intentional and polished.", imgQuery: "graphic+logo+tshirt,men", sig: 13 },
-      { name: "Athletic Piqué Polo", verdict: "avoid", qty: "0", bestColors: [], desc: "The sporty piqué polo (think golf shirt) reads too casual-athletic for your style goals. Swap it for a knit polo — same vibe, far more refined.", imgQuery: "polo+shirt,men,sporty,athletic", sig: 131 },
+      { name: "Quarter-Zip Sweater", verdict: "wear", qty: "3–4", bestColors: ["#2D5016", "#1B2A4A", "#722F37", "#4A4A44"], desc: "Your signature piece. Knit or fleece, sitting just below the belt. Layer over Oxford shirts or wear solo. Forest green and navy are your go-to colorways." },
+      { name: "Crew-Neck Sweater", verdict: "wear", qty: "2–3", bestColors: ["#9A6324", "#008080", "#CC5500", "#722F37"], desc: "Merino wool or lambswool. Layer over collared shirts for smart casual. Slim fit — skim, not cling. Cognac and rust are standout Deep Autumn choices." },
+      { name: "V-Neck Merino Sweater", verdict: "wear", qty: "1–2", bestColors: ["#1B2A4A", "#2D5016", "#3B2314"], desc: "Perfect over an Oxford button-down — the V shows the collar underneath. Slim fit merino in deep palette colors. Slightly more formal than the crew-neck." },
+      { name: "Roll / Turtleneck", verdict: "wear", qty: "1–2", bestColors: ["#3B2314", "#4A4A44", "#1B2A4A"], desc: "Elevated winter piece. Looks incredible under blazers and overcoats — the roll-neck adds structure and warmth. Dark chocolate, charcoal, and navy are your best." },
+      { name: "Knit Polo Shirt", verdict: "wear", qty: "2–3", bestColors: ["#1B2A4A", "#2D5016", "#722F37"], desc: "Not the sporty piqué — a knit polo is refined and elevated. Collar adds polish without a full shirt. Great for conferences, dinners, and elevated office days." },
+      { name: "Henley (Long-Sleeve)", verdict: "wear", qty: "2–3", bestColors: ["#4A4A44", "#2D5016", "#F5F0E0"], desc: "The step-up from a plain tee. Button placket adds detail without fuss. Perfect for Dublin pub nights, casual dinners, and smart weekends." },
+      { name: "Oxford Button-Down (OCBD)", verdict: "wear", qty: "3–4", bestColors: ["#F5F0E0", "#C8AD7F", "#8A9A5B"], desc: "Your most versatile 'dress-up' shirt. Works under blazers, tucked with chinos, or untucked with jeans. Off-white and warm tones are your best picks." },
+      { name: "Flannel Shirt", verdict: "wear", qty: "2", bestColors: ["#722F37", "#2D5016", "#9A6324"], desc: "Dublin autumn essential. Warm plaid patterns in burgundy-green or brown tartans are a Deep Autumn dream. Wear open over a tee or buttoned up with chinos." },
+      { name: "Linen Shirt", verdict: "wear", qty: "2", bestColors: ["#F5F0E0", "#C8AD7F", "#CC5500"], desc: "Summer essential for Dublin's warmer months. Cream, tan, or rust in a slim fit. Slightly relaxed is fine — roll the sleeves. Avoid stiff, heavily pressed linen." },
+      { name: "Crew-Neck T-Shirt", verdict: "wear", qty: "5–7", bestColors: ["#F5F0E0", "#556B2F", "#CC5500", "#722F37", "#2D5016", "#4A4A44"], desc: "Your casual base layer. Invest in structured, heavier cotton (180–200gsm). Choose warm palette colors — cream, olive, rust, burgundy. Avoid grey." },
+      { name: "Zip-Up Hoodie", verdict: "wear", qty: "1–2", bestColors: ["#4A4A44", "#2D5016", "#556B2F"], desc: "Keep it clean and slim — no logo, no print. Wear under your overcoat or bomber on casual Dublin days. Charcoal and olive are your best picks." },
+      { name: "Sweatshirt (Crewneck)", verdict: "wear", qty: "2", bestColors: ["#4A4A44", "#556B2F", "#722F37"], desc: "Weekend casual. French terry or heavyweight cotton. Relaxed but not oversized — should still show your shape. No large graphics." },
+      { name: "Graphic / Logo Tee", verdict: "avoid", qty: "0", bestColors: [], desc: "Large graphics and brand logos read as untidy and juvenile. A clean, warm-colored tee always looks more intentional and polished." },
+      { name: "Athletic Piqué Polo", verdict: "avoid", qty: "0", bestColors: [], desc: "The sporty piqué polo (think golf shirt) reads too casual-athletic for your style goals. Swap it for a knit polo — same vibe, far more refined." },
     ],
   },
   {
     category: "Bottoms",
     items: [
-      { name: "Slim Tapered Chinos", verdict: "wear", qty: "4–5", bestColors: ["#C8AD7F", "#556B2F", "#1B2A4A", "#4A4A44", "#9A6324"], desc: "Your wardrobe workhorse. Tan is your go-to — then expand into olive, navy, and charcoal. Slim or slim-tapered fit, not skinny.", imgQuery: "slim+tapered+chinos,men,smart+casual", sig: 14 },
-      { name: "Corduroy Trousers", verdict: "wear", qty: "1–2", bestColors: ["#9A6324", "#556B2F", "#722F37"], desc: "A perfect Deep Autumn fabric — the warm texture and earthy tones are made for your palette. Slim fit in cognac, olive, or burgundy for autumn/winter. Pairs brilliantly with cream tees and brown boots.", imgQuery: "corduroy+trousers,men,slim,autumn", sig: 15 },
-      { name: "Dark Wash Jeans", verdict: "wear", qty: "2", bestColors: ["#1C2841", "#2C2420"], desc: "Slim or slim-tapered only. No distressing, no pre-fading, no rips. Dark indigo reads polished and can even work with a blazer.", imgQuery: "dark+wash+slim+jeans,men,denim", sig: 16 },
-      { name: "Wool Trousers", verdict: "wear", qty: "2", bestColors: ["#4A4A44", "#1B2A4A"], desc: "For formal occasions, dinners, and meetings where you want a step up. Get them tailored/tapered to your 65kg frame — baggy wool trousers look cheap.", imgQuery: "wool+trousers,men,tailored,slim", sig: 17 },
-      { name: "Chino Shorts", verdict: "wear", qty: "2", bestColors: ["#C8AD7F", "#556B2F"], desc: "For Dublin's brief summers. Tan or olive, slim fit, hitting just above the knee. Never cargo-style with side pockets. Keep the rest of the outfit neat.", imgQuery: "chino+shorts,men,slim,smart", sig: 18 },
-      { name: "Baggy / Wide-Leg Jeans", verdict: "avoid", qty: "0", bestColors: [], desc: "Too much fabric for your 65kg lean frame. Wide legs visually shorten and swallow your silhouette — the opposite of what you want.", imgQuery: "baggy+wide+leg+jeans,men", sig: 19 },
-      { name: "Skinny Jeans", verdict: "avoid", qty: "0", bestColors: [], desc: "Too restrictive and dated. Slim-tapered gives you the clean, tapered line without being painted on.", imgQuery: "skinny+jeans,men,tight", sig: 20 },
-      { name: "Cargo Pants", verdict: "avoid", qty: "0", bestColors: [], desc: "Cargo pockets break the clean silhouette. If you want a relaxed trouser, corduroy or chinos in a relaxed-slim cut are the better call.", imgQuery: "cargo+pants,men,utility", sig: 201 },
+      { name: "Slim Tapered Chinos", verdict: "wear", qty: "4–5", bestColors: ["#C8AD7F", "#556B2F", "#1B2A4A", "#4A4A44", "#9A6324"], desc: "Your wardrobe workhorse. Tan is your go-to — then expand into olive, navy, and charcoal. Slim or slim-tapered fit, not skinny." },
+      { name: "Corduroy Trousers", verdict: "wear", qty: "1–2", bestColors: ["#9A6324", "#556B2F", "#722F37"], desc: "A perfect Deep Autumn fabric — the warm texture and earthy tones are made for your palette. Slim fit in cognac, olive, or burgundy for autumn/winter." },
+      { name: "Dark Wash Jeans", verdict: "wear", qty: "2", bestColors: ["#1C2841", "#2C2420"], desc: "Slim or slim-tapered only. No distressing, no pre-fading, no rips. Dark indigo reads polished and can even work with a blazer." },
+      { name: "Wool Trousers", verdict: "wear", qty: "2", bestColors: ["#4A4A44", "#1B2A4A"], desc: "For formal occasions, dinners, and meetings where you want a step up. Get them tailored/tapered to your 65kg frame — baggy wool trousers look cheap." },
+      { name: "Chino Shorts", verdict: "wear", qty: "2", bestColors: ["#C8AD7F", "#556B2F"], desc: "For Dublin's brief summers. Tan or olive, slim fit, hitting just above the knee. Never cargo-style with side pockets. Keep the rest of the outfit neat." },
+      { name: "Baggy / Wide-Leg Jeans", verdict: "avoid", qty: "0", bestColors: [], desc: "Too much fabric for your 65kg lean frame. Wide legs visually shorten and swallow your silhouette — the opposite of what you want." },
+      { name: "Skinny Jeans", verdict: "avoid", qty: "0", bestColors: [], desc: "Too restrictive and dated. Slim-tapered gives you the clean, tapered line without being painted on." },
+      { name: "Cargo Pants", verdict: "avoid", qty: "0", bestColors: [], desc: "Cargo pockets break the clean silhouette. If you want a relaxed trouser, corduroy or chinos in a relaxed-slim cut are the better call." },
     ],
   },
   {
     category: "Outerwear",
     items: [
-      { name: "Knit Cardigan", verdict: "wear", qty: "2", bestColors: ["#9A6324", "#2D5016", "#722F37", "#008080"], desc: "Underrated layering piece. An open-front cardigan over an Oxford shirt or tee is effortlessly smart casual. Cognac and forest green are your standout options.", imgQuery: "knit+cardigan,men,open+front,autumn", sig: 21 },
-      { name: "Wool Overcoat", verdict: "wear", qty: "1–2", bestColors: ["#9A6324", "#4A4A44", "#3B2314"], desc: "THE investment piece. Camel/cognac is stunning on Deep Autumns — it echoes your warm skin and makes you glow. Mid-thigh length. This coat alone elevates any outfit.", imgQuery: "camel+wool+overcoat,men,long", sig: 22 },
-      { name: "Unstructured Blazer", verdict: "wear", qty: "1–2", bestColors: ["#1B2A4A", "#2D5016", "#4A4A44"], desc: "Biggest 'level-up' piece in your wardrobe. Navy is a must-have. Wear with chinos and an Oxford, or throw over a quality tee. Transforms a casual outfit instantly.", imgQuery: "unstructured+blazer,men,navy,smart+casual", sig: 23 },
-      { name: "Harrington Jacket", verdict: "wear", qty: "1", bestColors: ["#9A6324", "#3B2314", "#556B2F"], desc: "Classic British casual jacket — clean silhouette, usually in cotton or cotton-poly. Perfect over knitwear or a tee in Dublin's mild autumn. Cognac or olive are ideal for your palette.", imgQuery: "harrington+jacket,men,camel,casual", sig: 24 },
-      { name: "Bomber Jacket", verdict: "wear", qty: "1", bestColors: ["#556B2F", "#3B2314", "#4A4A44"], desc: "Casual spring/autumn layer. Olive and dark brown are your best shades. Works with dark jeans and henleys for a cool casual look.", imgQuery: "bomber+jacket,men,olive,casual", sig: 25 },
-      { name: "Brown Leather Jacket", verdict: "wear", qty: "1", bestColors: ["#3B2314", "#9A6324"], desc: "Warm brown suits your coloring FAR better than black leather. Dark chocolate or cognac leather is a 10+ year investment piece. Slim cut — no padding in the shoulders.", imgQuery: "brown+leather+jacket,men,slim", sig: 26 },
-      { name: "Quilted Gilet / Vest", verdict: "wear", qty: "1", bestColors: ["#1B2A4A", "#556B2F", "#3B2314"], desc: "Dublin layering essential — keeps your core warm without bulking up your arms. Wear over a quarter-zip or flannel shirt. Navy, olive, or dark brown.", imgQuery: "quilted+gilet+vest,men,layering", sig: 27 },
-      { name: "Rain Jacket", verdict: "wear", qty: "1", bestColors: ["#1B2A4A", "#556B2F"], desc: "Dublin essential — but keep it clean and minimal. Not a sporty hiking jacket. Navy or olive in a streamlined cut. Can layer under your overcoat.", imgQuery: "rain+jacket,men,minimal,navy", sig: 28 },
-      { name: "Black Leather Jacket", verdict: "avoid", qty: "0", bestColors: [], desc: "Black leather clashes with your warm golden undertones. Every Deep Autumn who switches from black to brown leather is instantly more striking.", imgQuery: "black+leather+jacket,men", sig: 29 },
-      { name: "Oversized Puffer / Down Jacket", verdict: "avoid", qty: "0", bestColors: [], desc: "Chunky puffers swamp your lean 65kg frame. If you need warmth, layer — a quarter-zip under an overcoat is always more refined.", imgQuery: "puffer+down+jacket,men,oversized", sig: 291 },
+      { name: "Knit Cardigan", verdict: "wear", qty: "2", bestColors: ["#9A6324", "#2D5016", "#722F37", "#008080"], desc: "Underrated layering piece. An open-front cardigan over an Oxford shirt or tee is effortlessly smart casual. Cognac and forest green are your standout options." },
+      { name: "Wool Overcoat", verdict: "wear", qty: "1–2", bestColors: ["#9A6324", "#4A4A44", "#3B2314"], desc: "THE investment piece. Camel/cognac is stunning on Deep Autumns — it echoes your warm skin and makes you glow. Mid-thigh length. This coat alone elevates any outfit." },
+      { name: "Unstructured Blazer", verdict: "wear", qty: "1–2", bestColors: ["#1B2A4A", "#2D5016", "#4A4A44"], desc: "Biggest 'level-up' piece in your wardrobe. Navy is a must-have. Wear with chinos and an Oxford, or throw over a quality tee. Transforms a casual outfit instantly." },
+      { name: "Harrington Jacket", verdict: "wear", qty: "1", bestColors: ["#9A6324", "#3B2314", "#556B2F"], desc: "Classic British casual jacket — clean silhouette, usually in cotton or cotton-poly. Perfect over knitwear or a tee in Dublin's mild autumn. Cognac or olive are ideal." },
+      { name: "Bomber Jacket", verdict: "wear", qty: "1", bestColors: ["#556B2F", "#3B2314", "#4A4A44"], desc: "Casual spring/autumn layer. Olive and dark brown are your best shades. Works with dark jeans and henleys for a cool casual look." },
+      { name: "Brown Leather Jacket", verdict: "wear", qty: "1", bestColors: ["#3B2314", "#9A6324"], desc: "Warm brown suits your coloring FAR better than black leather. Dark chocolate or cognac leather is a 10+ year investment piece. Slim cut — no padding in the shoulders." },
+      { name: "Quilted Gilet / Vest", verdict: "wear", qty: "1", bestColors: ["#1B2A4A", "#556B2F", "#3B2314"], desc: "Dublin layering essential — keeps your core warm without bulking up your arms. Wear over a quarter-zip or flannel shirt. Navy, olive, or dark brown." },
+      { name: "Rain Jacket", verdict: "wear", qty: "1", bestColors: ["#1B2A4A", "#556B2F"], desc: "Dublin essential — but keep it clean and minimal. Not a sporty hiking jacket. Navy or olive in a streamlined cut. Can layer under your overcoat." },
+      { name: "Black Leather Jacket", verdict: "avoid", qty: "0", bestColors: [], desc: "Black leather clashes with your warm golden undertones. Every Deep Autumn who switches from black to brown leather is instantly more striking." },
+      { name: "Oversized Puffer / Down Jacket", verdict: "avoid", qty: "0", bestColors: [], desc: "Chunky puffers swamp your lean 65kg frame. If you need warmth, layer — a quarter-zip under an overcoat is always more refined." },
     ],
   },
   {
     category: "Footwear",
     items: [
-      { name: "White Leather Sneakers", verdict: "wear", qty: "1", bestColors: ["#FFFFFF"], desc: "Classic, timeless, and pairs with everything. Keep them clean — scruffy whites undercut the whole outfit. Stan Smiths, Common Projects, or similar clean silhouettes.", imgQuery: "white+leather+sneakers,men,clean,minimal", sig: 30 },
-      { name: "Brown Suede Loafers", verdict: "wear", qty: "1", bestColors: ["#8B4513", "#9A6324"], desc: "Your most effortlessly elegant shoe. Tan or cognac suede, worn sockless with chinos in summer. Instantly elevates a simple outfit. Great for dinners and work.", imgQuery: "brown+suede+loafers,men,slip+on", sig: 31 },
-      { name: "Chelsea Boots (Brown)", verdict: "wear", qty: "1–2", bestColors: ["#8B4513", "#9A6324", "#3B2314"], desc: "Your Dublin essential. Sleek elastic-side boot that pairs with everything from jeans to chinos to wool trousers. Chestnut or cognac leather. A wardrobe cornerstone.", imgQuery: "brown+chelsea+boots,men,leather", sig: 32 },
-      { name: "Desert Boots (Suede)", verdict: "wear", qty: "1", bestColors: ["#C8AD7F", "#8B4513"], desc: "Casual-smart bridge between sneakers and boots. Tan suede is the classic and works beautifully with your warm palette. Great with chinos and knitwear.", imgQuery: "desert+boots,men,tan+suede,clarks", sig: 33 },
-      { name: "Derby / Oxford Shoes", verdict: "wear", qty: "1", bestColors: ["#3B2314", "#9A6324"], desc: "For formal occasions, job interviews, and events. Always dark brown or cognac — never black. Get them in a slim last (not chunky) to match your build.", imgQuery: "brown+derby+oxford+shoes,men,leather,formal", sig: 34 },
-      { name: "Brown Leather Monk Strap", verdict: "wear", qty: "1", bestColors: ["#3B2314", "#9A6324"], desc: "A step more interesting than a Derby — the buckle detail adds personality without being flashy. Works with trousers and chinos. Deep Autumn brown is the only color to consider.", imgQuery: "brown+monk+strap+shoes,men,leather", sig: 341 },
-      { name: "Trail / Running Sneakers", verdict: "wear", qty: "1", bestColors: ["#4A4A44", "#556B2F"], desc: "For weekend walks, outdoors, and gym — keep these separate from your daily rotation. Choose muted, warm-toned colorways. Never neon or heavily branded.", imgQuery: "trail+running+sneakers,men,muted,outdoor", sig: 35 },
-      { name: "Black Dress Shoes", verdict: "avoid", qty: "0", bestColors: [], desc: "Black footwear clashes with your warm palette — especially with the brown and tan pieces you'll own. Always brown.", imgQuery: "black+oxford+dress+shoes,men,formal", sig: 36 },
-      { name: "Chunky / Dad Sneakers", verdict: "avoid", qty: "0", bestColors: [], desc: "Chunky soles and heavy branding undercut your clean, smart-casual aesthetic. A sleek white leather sneaker always wins.", imgQuery: "chunky+dad+sneakers,men,oversized", sig: 361 },
+      { name: "White Leather Sneakers", verdict: "wear", qty: "1", bestColors: ["#FFFFFF"], desc: "Classic, timeless, and pairs with everything. Keep them clean — scruffy whites undercut the whole outfit. Stan Smiths, Common Projects, or similar clean silhouettes." },
+      { name: "Brown Suede Loafers", verdict: "wear", qty: "1", bestColors: ["#8B4513", "#9A6324"], desc: "Your most effortlessly elegant shoe. Tan or cognac suede, worn sockless with chinos in summer. Instantly elevates a simple outfit. Great for dinners and work." },
+      { name: "Chelsea Boots (Brown)", verdict: "wear", qty: "1–2", bestColors: ["#8B4513", "#9A6324", "#3B2314"], desc: "Your Dublin essential. Sleek elastic-side boot that pairs with everything from jeans to chinos to wool trousers. Chestnut or cognac leather. A wardrobe cornerstone." },
+      { name: "Desert Boots (Suede)", verdict: "wear", qty: "1", bestColors: ["#C8AD7F", "#8B4513"], desc: "Casual-smart bridge between sneakers and boots. Tan suede is the classic and works beautifully with your warm palette. Great with chinos and knitwear." },
+      { name: "Derby / Oxford Shoes", verdict: "wear", qty: "1", bestColors: ["#3B2314", "#9A6324"], desc: "For formal occasions, job interviews, and events. Always dark brown or cognac — never black. Get them in a slim last (not chunky) to match your build." },
+      { name: "Brown Leather Monk Strap", verdict: "wear", qty: "1", bestColors: ["#3B2314", "#9A6324"], desc: "A step more interesting than a Derby — the buckle detail adds personality without being flashy. Works with trousers and chinos. Deep Autumn brown is the only color to consider." },
+      { name: "Trail / Running Sneakers", verdict: "wear", qty: "1", bestColors: ["#4A4A44", "#556B2F"], desc: "For weekend walks, outdoors, and gym — keep these separate from your daily rotation. Choose muted, warm-toned colorways. Never neon or heavily branded." },
+      { name: "Black Dress Shoes", verdict: "avoid", qty: "0", bestColors: [], desc: "Black footwear clashes with your warm palette — especially with the brown and tan pieces you'll own. Always brown." },
+      { name: "Chunky / Dad Sneakers", verdict: "avoid", qty: "0", bestColors: [], desc: "Chunky soles and heavy branding undercut your clean, smart-casual aesthetic. A sleek white leather sneaker always wins." },
     ],
   },
   {
     category: "Accessories",
     items: [
-      { name: "Brown Leather Work Bag", verdict: "wear", qty: "1", bestColors: ["#3B2314", "#9A6324"], desc: "Brown leather tote or structured messenger for work. Instantly elevates any outfit. Ditch the backpack for meetings and conferences — this is one of the highest-ROI wardrobe investments.", imgQuery: "brown+leather+tote+bag,men,work,professional", sig: 37 },
-      { name: "Wool Beanie Hat", verdict: "wear", qty: "1–2", bestColors: ["#722F37", "#2D5016", "#4A4A44"], desc: "Dublin winters demand it. Slim-fit ribbed beanie — not a loose floppy one. Burgundy and forest green are your best colors. Keep it close to the head for a clean look.", imgQuery: "wool+beanie+hat,men,slim,ribbed", sig: 38 },
-      { name: "Tortoiseshell Sunglasses", verdict: "wear", qty: "1", bestColors: ["#8B4513"], desc: "The perfect Deep Autumn frame — warm amber-brown tones mirror your palette. Flatters warm skin tones far better than jet black or silver frames.", imgQuery: "tortoiseshell+sunglasses,men,warm,acetate", sig: 39 },
-      { name: "Brown Leather Belt", verdict: "wear", qty: "2", bestColors: ["#3B2314", "#9A6324"], desc: "Own one dark brown and one cognac/tan. Match loosely to your shoes (not exact). Never black leather — it clashes with every warm piece in your wardrobe.", imgQuery: "brown+leather+belt,men,slim,buckle", sig: 40 },
-      { name: "Leather Gloves", verdict: "wear", qty: "1", bestColors: ["#3B2314", "#9A6324"], desc: "Dublin winter essential. Brown leather or tan suede with a wool lining. Touchscreen-compatible fingertips are worth the extra spend. Adds refinement to your overcoat look.", imgQuery: "brown+leather+gloves,men,winter,lined", sig: 41 },
-      { name: "Pocket Square", verdict: "wear", qty: "2–3", bestColors: ["#722F37", "#D4A017", "#9A6324"], desc: "An effortless blazer upgrade. Fold it simply — a puff or flat fold in burgundy or mustard adds personality without trying too hard. Skip matching it exactly to your shirt.", imgQuery: "pocket+square,men,blazer,burgundy", sig: 42 },
-      { name: "Wool Scarf", verdict: "wear", qty: "1–2", bestColors: ["#722F37", "#D4A017", "#9A6324"], desc: "Adds a statement color near your face — exactly where it matters. Burgundy and mustard gold are your strongest choices for Dublin winters.", imgQuery: "wool+scarf,men,burgundy,warm,winter", sig: 43 },
-      { name: "Watch (Warm Metal)", verdict: "wear", qty: "1–2", bestColors: ["#B8860B"], desc: "Gold or rose gold case, brown leather strap. Avoid silver/steel — it's too cool-toned for your wrist. A simple dress watch over a chunky sports watch.", imgQuery: "gold+watch,men,brown+leather+strap,dress", sig: 44 },
-      { name: "Silver / Steel Watch", verdict: "avoid", qty: "0", bestColors: [], desc: "Cool silver tones clash with your warm skin undertones. Gold and rose gold always look more natural on you.", imgQuery: "silver+steel+watch,men,metal+bracelet", sig: 441 },
-      { name: "Black Leather Accessories", verdict: "avoid", qty: "0", bestColors: [], desc: "Black belts, black bags, black wallets — all clash with a warm palette. Every black leather piece you own should be replaced with brown or cognac.", imgQuery: "black+leather+belt+wallet,accessories", sig: 45 },
+      { name: "Brown Leather Work Bag", verdict: "wear", qty: "1", bestColors: ["#3B2314", "#9A6324"], desc: "Brown leather tote or structured messenger for work. Instantly elevates any outfit. Ditch the backpack for meetings and conferences — one of the highest-ROI wardrobe investments." },
+      { name: "Wool Beanie Hat", verdict: "wear", qty: "1–2", bestColors: ["#722F37", "#2D5016", "#4A4A44"], desc: "Dublin winters demand it. Slim-fit ribbed beanie — not a loose floppy one. Burgundy and forest green are your best colors." },
+      { name: "Tortoiseshell Sunglasses", verdict: "wear", qty: "1", bestColors: ["#8B4513"], desc: "The perfect Deep Autumn frame — warm amber-brown tones mirror your palette. Flatters warm skin tones far better than jet black or silver frames." },
+      { name: "Brown Leather Belt", verdict: "wear", qty: "2", bestColors: ["#3B2314", "#9A6324"], desc: "Own one dark brown and one cognac/tan. Match loosely to your shoes (not exact). Never black leather — it clashes with every warm piece in your wardrobe." },
+      { name: "Leather Gloves", verdict: "wear", qty: "1", bestColors: ["#3B2314", "#9A6324"], desc: "Dublin winter essential. Brown leather or tan suede with a wool lining. Touchscreen-compatible fingertips are worth the extra spend." },
+      { name: "Pocket Square", verdict: "wear", qty: "2–3", bestColors: ["#722F37", "#D4A017", "#9A6324"], desc: "An effortless blazer upgrade. Fold it simply — a puff or flat fold in burgundy or mustard adds personality without trying too hard." },
+      { name: "Wool Scarf", verdict: "wear", qty: "1–2", bestColors: ["#722F37", "#D4A017", "#9A6324"], desc: "Adds a statement color near your face — exactly where it matters. Burgundy and mustard gold are your strongest choices for Dublin winters." },
+      { name: "Watch (Warm Metal)", verdict: "wear", qty: "1–2", bestColors: ["#B8860B"], desc: "Gold or rose gold case, brown leather strap. Avoid silver/steel — it's too cool-toned for your wrist. A simple dress watch over a chunky sports watch." },
+      { name: "Silver / Steel Watch", verdict: "avoid", qty: "0", bestColors: [], desc: "Cool silver tones clash with your warm skin undertones. Gold and rose gold always look more natural on you." },
+      { name: "Black Leather Accessories", verdict: "avoid", qty: "0", bestColors: [], desc: "Black belts, black bags, black wallets — all clash with a warm palette. Every black leather piece you own should be replaced with brown or cognac." },
     ],
   },
 ];
@@ -162,71 +162,6 @@ const occasionGuides = [
   { name: "Special / Formal (Eid, Weddings)", icon: "✨", level: "Formal / Traditional", formula: "Suit or shalwar kameez in palette colors + polished accessories", doList: ["Navy or charcoal suit", "Deep navy/forest green kurta", "Cognac shoes + matching belt", "Cream kurta + dark waistcoat for Eid", "Off-white dress shirt"], dontList: ["Black suit (charcoal is better)", "Bright pastel kurtas", "Black shoes", "Mismatched accessories", "Overly trendy pieces"] },
 ];
 
-// ===================== PHOTO IDs =====================
-// Direct Unsplash CDN — stable, no API key needed
-// URL: https://images.unsplash.com/photo-{ID}?w=200&h=240&fit=crop&auto=format
-
-const PHOTO_IDS = {
-  "Quarter-Zip Sweater":        "b1YG4_8wRYs",
-  "Crew-Neck Sweater":          "UKSoi-H2n_k",
-  "V-Neck Merino Sweater":      "UKSoi-H2n_k",
-  "Roll / Turtleneck":          "T_YOYS3mOhc",
-  "Knit Polo Shirt":            "9QW52RyBLao",
-  "Henley (Long-Sleeve)":       "KZ0uH23koWQ",
-  "Flannel Shirt":              "mVNMC7eSq7E",
-  "Crew-Neck T-Shirt":          "kkj9iKxsdhY",
-  "Zip-Up Hoodie":              "NXZFzJwE6Sg",
-  "Sweatshirt (Crewneck)":      "7cERndkOyDw",
-  "Graphic / Logo Tee":         "Ilg0getpBYE",
-  "Athletic Piqué Polo":        "bAk6aJSIohU",
-  "Dark Wash Jeans":            "ItqFmSxKnIg",
-  "Chino Shorts":               "2FKTyJqfWX8",
-  "Knit Cardigan":              "UKSoi-H2n_k",
-  "Harrington Jacket":          "yLR6BYNlXaM",
-  "Bomber Jacket":              "yLR6BYNlXaM",
-  "Brown Leather Jacket":       "3MoLgnpW1Jk",
-  "Black Leather Jacket":       "Zn1SO-aYZgY",
-  "White Leather Sneakers":     "uIWfpSURyeM",
-  "Brown Suede Loafers":        "b_L9iE1DUHo",
-  "Chelsea Boots (Brown)":      "miNo_SFAcws",
-  "Desert Boots (Suede)":       "miNo_SFAcws",
-  "Trail / Running Sneakers":   "HGgsNCbH2Rs",
-  "Brown Leather Work Bag":     "2_tjJJqsZms",
-  "Wool Beanie Hat":            "rBVSAlQBS7E",
-  "Tortoiseshell Sunglasses":   "QsBTYwxjzUU",
-  "Brown Leather Belt":         "NKjIT7u5nXE",
-  "Pocket Square":              "lQQpyVvW0l0",
-  "Watch (Warm Metal)":         "KnrOfQGuPYo",
-};
-
-const ITEM_EMOJIS = {
-  "Oxford Button-Down (OCBD)":       "👔",
-  "Linen Shirt":                     "👕",
-  "Slim Tapered Chinos":             "👖",
-  "Corduroy Trousers":               "👖",
-  "Wool Trousers":                   "👖",
-  "Baggy / Wide-Leg Jeans":          "👖",
-  "Skinny Jeans":                    "👖",
-  "Cargo Pants":                     "👖",
-  "Wool Overcoat":                   "🧥",
-  "Unstructured Blazer":             "👔",
-  "Quilted Gilet / Vest":            "🦺",
-  "Rain Jacket":                     "🌧️",
-  "Oversized Puffer / Down Jacket":  "🧥",
-  "Derby / Oxford Shoes":            "👞",
-  "Brown Leather Monk Strap":        "👞",
-  "Black Dress Shoes":               "👞",
-  "Chunky / Dad Sneakers":           "👟",
-  "Leather Gloves":                  "🧤",
-  "Wool Scarf":                      "🧣",
-  "Silver / Steel Watch":            "⌚",
-  "Black Leather Accessories":       "🖤",
-};
-
-const CATEGORY_EMOJIS = {
-  "Tops": "👕", "Bottoms": "👖", "Outerwear": "🧥", "Footwear": "👟", "Accessories": "⌚",
-};
-
 // ===================== COMPONENTS =====================
 
 function ColorSwatch({ hex, size = 48 }) {
@@ -237,53 +172,6 @@ function ColorSwatch({ hex, size = 48 }) {
       border: isLight ? "2px solid #d4cfc7" : "2px solid rgba(0,0,0,0.08)",
       boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
     }} />
-  );
-}
-
-function ClothingRefImage({ item, category }) {
-  const [errored, setErrored] = useState(false);
-  const photoId = PHOTO_IDS[item.name];
-  const isAvoid = item.verdict === "avoid";
-
-  const fallbackEmoji = ITEM_EMOJIS[item.name] || CATEGORY_EMOJIS[category] || "👔";
-
-  if (!photoId || errored) {
-    return (
-      <div style={{
-        flexShrink: 0, width: 90, height: 110, borderRadius: 10,
-        backgroundColor: isAvoid ? "#FFF0F0" : "#F5F2EE",
-        border: `1px solid ${isAvoid ? "#FFCDD2" : "#E8E2DA"}`,
-        display: "flex", alignItems: "center", justifyContent: "center",
-        fontSize: 38,
-      }}>
-        {fallbackEmoji}
-      </div>
-    );
-  }
-
-  const src = `https://images.unsplash.com/photo-${photoId}?w=200&h=240&fit=crop&auto=format&q=80`;
-  return (
-    <div style={{ flexShrink: 0, width: 90, position: "relative" }}>
-      <img
-        src={src}
-        alt={item.name}
-        style={{
-          width: 90, height: 110, borderRadius: 10, objectFit: "cover",
-          display: "block", backgroundColor: "#F5F0EB",
-          filter: isAvoid ? "grayscale(50%) brightness(0.9)" : "none",
-        }}
-        onError={() => setErrored(true)}
-      />
-      {isAvoid && (
-        <div style={{
-          position: "absolute", inset: 0, borderRadius: 10,
-          backgroundColor: "rgba(196,30,58,0.18)",
-          display: "flex", alignItems: "center", justifyContent: "center",
-        }}>
-          <div style={{ fontSize: 20 }}>✕</div>
-        </div>
-      )}
-    </div>
   );
 }
 
@@ -328,7 +216,6 @@ export default function Home() {
   const [activeSection, setActiveSection] = useState("Colors");
   const [activeClothingCat, setActiveClothingCat] = useState("Tops");
 
-  // Analyzer state
   const [dragOver, setDragOver] = useState(false);
   const [imagePreview, setImagePreview] = useState(null);
   const [imageData, setImageData] = useState(null);
@@ -351,7 +238,6 @@ export default function Home() {
     reader.readAsDataURL(file);
   }, []);
 
-  // Paste handler
   useEffect(() => {
     const handlePaste = (e) => {
       if (activeSection !== "Analyzer") return;
@@ -414,7 +300,6 @@ export default function Home() {
       </Head>
 
       <div style={{ minHeight: "100vh" }}>
-        {/* Header */}
         <div style={{ background: "linear-gradient(135deg, #2D5016 0%, #1B2A4A 50%, #3B2314 100%)", padding: "28px 20px 20px", color: "white" }}>
           <div style={{ maxWidth: 920, margin: "0 auto" }}>
             <div style={{ fontSize: 10, letterSpacing: 3, textTransform: "uppercase", opacity: 0.6, marginBottom: 6 }}>Personal Style Guide</div>
@@ -423,7 +308,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Nav */}
         <div style={{ position: "sticky", top: 0, zIndex: 10, backgroundColor: "#FAF8F5", borderBottom: "2px solid #E8E2DA", padding: "0 20px", overflowX: "auto" }}>
           <div style={{ maxWidth: 920, margin: "0 auto", display: "flex", gap: 0 }}>
             {SECTIONS.map((s) => {
@@ -441,7 +325,6 @@ export default function Home() {
 
         <div style={{ maxWidth: 920, margin: "0 auto", padding: "24px 20px 80px" }}>
 
-          {/* ===== COLORS ===== */}
           {activeSection === "Colors" && (
             <div className="fade-in">
               <h2 style={{ fontSize: 22, color: "#2D5016", marginBottom: 6 }}>Your Color Palette</h2>
@@ -480,7 +363,6 @@ export default function Home() {
             </div>
           )}
 
-          {/* ===== AVOID ===== */}
           {activeSection === "Avoid" && (
             <div className="fade-in">
               <h2 style={{ fontSize: 22, color: "#C41E3A", marginBottom: 6 }}>Colors to Avoid</h2>
@@ -532,12 +414,11 @@ export default function Home() {
             </div>
           )}
 
-          {/* ===== CLOTHING ===== */}
           {activeSection === "Clothing" && (
             <div className="fade-in">
               <h2 style={{ fontSize: 22, color: "#2D5016", marginBottom: 6 }}>Clothing Guide</h2>
               <p style={{ color: "#666", fontSize: 14, lineHeight: 1.6, marginBottom: 16 }}>
-                Each item with a reference photo, verdict, quantities, and your best colors.
+                Each item marked <span style={{ color: "#2D5016", fontWeight: 700 }}>✅ WEAR</span> or <span style={{ color: "#C41E3A", fontWeight: 700 }}>❌ AVOID</span> with quantities and your best colors.
               </p>
               <div style={{ display: "flex", gap: 6, marginBottom: 20, flexWrap: "wrap" }}>
                 {clothingTypes.map((cat) => (
@@ -552,31 +433,27 @@ export default function Home() {
                 <div key={cat.category} style={{ display: "flex", flexDirection: "column", gap: 12 }}>
                   {cat.items.map((item, ii) => (
                     <div key={ii} style={{
-                      backgroundColor: "white", borderRadius: 14, padding: "14px 16px",
+                      backgroundColor: "white", borderRadius: 14, padding: "16px 18px",
                       boxShadow: "0 1px 6px rgba(0,0,0,0.05)",
                       border: item.verdict === "avoid" ? "2px solid #FFCDD2" : "2px solid #C8E6C9",
-                      display: "flex", gap: 14, alignItems: "flex-start",
                     }}>
-                      <ClothingRefImage item={item} category={cat.category} />
-                      <div style={{ flex: 1, minWidth: 0 }}>
-                        <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 5, flexWrap: "wrap" }}>
-                          <span style={{
-                            fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1,
-                            color: item.verdict === "avoid" ? "#C41E3A" : "#2D5016",
-                            backgroundColor: item.verdict === "avoid" ? "#FFEBEE" : "#E8F5E9",
-                            padding: "3px 10px", borderRadius: 10, flexShrink: 0,
-                          }}>{item.verdict === "avoid" ? "❌ AVOID" : "✅ WEAR"}</span>
-                          {item.qty !== "0" && <span style={{ fontSize: 11, color: "#aaa" }}>Own {item.qty}</span>}
-                        </div>
-                        <h4 style={{ fontSize: 15, fontWeight: 700, margin: "0 0 4px" }}>{item.name}</h4>
-                        <p style={{ fontSize: 12, color: "#666", lineHeight: 1.5, margin: 0, marginBottom: item.bestColors.length ? 8 : 0 }}>{item.desc}</p>
-                        {item.bestColors.length > 0 && (
-                          <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
-                            <span style={{ fontSize: 11, color: "#aaa" }}>Best in:</span>
-                            <div style={{ display: "flex", gap: 4, flexWrap: "wrap" }}>{item.bestColors.map((h, ci) => <ColorSwatch key={ci} hex={h} size={22} />)}</div>
-                          </div>
-                        )}
+                      <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 6 }}>
+                        <span style={{
+                          fontSize: 10, fontWeight: 700, textTransform: "uppercase", letterSpacing: 1,
+                          color: item.verdict === "avoid" ? "#C41E3A" : "#2D5016",
+                          backgroundColor: item.verdict === "avoid" ? "#FFEBEE" : "#E8F5E9",
+                          padding: "3px 10px", borderRadius: 10,
+                        }}>{item.verdict === "avoid" ? "❌ AVOID" : "✅ WEAR"}</span>
+                        {item.qty !== "0" && <span style={{ fontSize: 11, color: "#aaa" }}>Own {item.qty}</span>}
                       </div>
+                      <h4 style={{ fontSize: 16, fontWeight: 700, margin: "0 0 4px" }}>{item.name}</h4>
+                      <p style={{ fontSize: 13, color: "#666", lineHeight: 1.5, margin: 0, marginBottom: item.bestColors.length ? 8 : 0 }}>{item.desc}</p>
+                      {item.bestColors.length > 0 && (
+                        <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+                          <span style={{ fontSize: 11, color: "#aaa" }}>Best in:</span>
+                          <div style={{ display: "flex", gap: 4 }}>{item.bestColors.map((h, ci) => <ColorSwatch key={ci} hex={h} size={22} />)}</div>
+                        </div>
+                      )}
                     </div>
                   ))}
                 </div>
@@ -584,7 +461,6 @@ export default function Home() {
             </div>
           )}
 
-          {/* ===== OUTFITS ===== */}
           {activeSection === "Outfits" && (
             <div className="fade-in">
               <h2 style={{ fontSize: 22, color: "#2D5016", marginBottom: 6 }}>Outfit Combinations</h2>
@@ -621,7 +497,6 @@ export default function Home() {
             </div>
           )}
 
-          {/* ===== OCCASIONS ===== */}
           {activeSection === "Occasions" && (
             <div className="fade-in">
               <h2 style={{ fontSize: 22, color: "#2D5016", marginBottom: 6 }}>Dressing by Occasion</h2>
@@ -655,7 +530,6 @@ export default function Home() {
             </div>
           )}
 
-          {/* ===== ANALYZER ===== */}
           {activeSection === "Analyzer" && (
             <div className="fade-in">
               <h2 style={{ fontSize: 22, color: "#2D5016", marginBottom: 6 }}>Should I Buy This?</h2>
@@ -671,12 +545,8 @@ export default function Home() {
                   onClick={() => fileInputRef.current?.click()}
                   style={{
                     border: `3px dashed ${dragOver ? "#2D5016" : "#CCC4B8"}`,
-                    borderRadius: 20,
-                    padding: "60px 40px",
-                    textAlign: "center",
-                    cursor: "pointer",
-                    backgroundColor: dragOver ? "#F1F8E9" : "#FEFDFB",
-                    transition: "all 0.2s",
+                    borderRadius: 20, padding: "60px 40px", textAlign: "center",
+                    cursor: "pointer", backgroundColor: dragOver ? "#F1F8E9" : "#FEFDFB", transition: "all 0.2s",
                   }}
                 >
                   <div style={{ fontSize: 52, marginBottom: 12 }}>📸</div>
@@ -685,91 +555,75 @@ export default function Home() {
                   <input ref={fileInputRef} type="file" accept="image/*" style={{ display: "none" }} onChange={(e) => processFile(e.target.files?.[0])} />
                 </div>
               ) : (
-                <div>
-                  <div style={{ display: "flex", gap: 20, flexWrap: "wrap", marginBottom: 20 }}>
-                    <div style={{ position: "relative" }}>
-                      <img src={imagePreview} alt="Clothing to analyze" style={{ maxWidth: 300, maxHeight: 400, borderRadius: 14, boxShadow: "0 4px 20px rgba(0,0,0,0.1)", objectFit: "contain" }} />
-                      <button onClick={resetAnalyzer} style={{
-                        position: "absolute", top: 8, right: 8, width: 32, height: 32, borderRadius: 16,
-                        backgroundColor: "rgba(0,0,0,0.6)", color: "white", border: "none", cursor: "pointer",
-                        fontSize: 16, display: "flex", alignItems: "center", justifyContent: "center",
-                      }}>✕</button>
-                    </div>
+                <div style={{ display: "flex", gap: 20, flexWrap: "wrap" }}>
+                  <div style={{ position: "relative" }}>
+                    <img src={imagePreview} alt="Clothing to analyze" style={{ maxWidth: 300, maxHeight: 400, borderRadius: 14, boxShadow: "0 4px 20px rgba(0,0,0,0.1)", objectFit: "contain" }} />
+                    <button onClick={resetAnalyzer} style={{
+                      position: "absolute", top: 8, right: 8, width: 32, height: 32, borderRadius: 16,
+                      backgroundColor: "rgba(0,0,0,0.6)", color: "white", border: "none", cursor: "pointer",
+                      fontSize: 16, display: "flex", alignItems: "center", justifyContent: "center",
+                    }}>✕</button>
+                  </div>
 
-                    <div style={{ flex: 1, minWidth: 240 }}>
-                      {!result && !analyzing && (
-                        <button onClick={analyzeImage} style={{
-                          padding: "14px 32px", backgroundColor: "#2D5016", color: "white", border: "none",
-                          borderRadius: 12, fontSize: 16, fontWeight: 700, cursor: "pointer", fontFamily: "inherit",
-                          boxShadow: "0 4px 14px rgba(45,80,22,0.3)", transition: "all 0.2s",
-                        }}>
-                          Analyze This Item
-                        </button>
-                      )}
+                  <div style={{ flex: 1, minWidth: 240 }}>
+                    {!result && !analyzing && (
+                      <button onClick={analyzeImage} style={{
+                        padding: "14px 32px", backgroundColor: "#2D5016", color: "white", border: "none",
+                        borderRadius: 12, fontSize: 16, fontWeight: 700, cursor: "pointer", fontFamily: "inherit",
+                        boxShadow: "0 4px 14px rgba(45,80,22,0.3)", transition: "all 0.2s",
+                      }}>Analyze This Item</button>
+                    )}
 
-                      {analyzing && (
-                        <div style={{ display: "flex", alignItems: "center", gap: 12, padding: "14px 0" }}>
-                          <div style={{ width: 24, height: 24, border: "3px solid #E8E2DA", borderTopColor: "#2D5016", borderRadius: "50%", animation: "spin 0.8s linear infinite" }} />
-                          <span style={{ fontSize: 15, color: "#666" }}>Analyzing against your palette...</span>
+                    {analyzing && (
+                      <div style={{ display: "flex", alignItems: "center", gap: 12, padding: "14px 0" }}>
+                        <div style={{ width: 24, height: 24, border: "3px solid #E8E2DA", borderTopColor: "#2D5016", borderRadius: "50%", animation: "spin 0.8s linear infinite" }} />
+                        <span style={{ fontSize: 15, color: "#666" }}>Analyzing against your palette...</span>
+                      </div>
+                    )}
+
+                    {error && (
+                      <div style={{ padding: "14px 18px", backgroundColor: "#FFEBEE", borderRadius: 12, border: "1px solid #FFCDD2", color: "#C41E3A", fontSize: 14 }}>
+                        {error}
+                      </div>
+                    )}
+
+                    {result && (
+                      <div className="fade-in" style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+                        <div>
+                          <VerdictBadge verdict={result.verdict} />
+                          <div style={{ marginTop: 8 }}><ConfidenceMeter value={result.confidence} /></div>
                         </div>
-                      )}
-
-                      {error && (
-                        <div style={{ padding: "14px 18px", backgroundColor: "#FFEBEE", borderRadius: 12, border: "1px solid #FFCDD2", color: "#C41E3A", fontSize: 14 }}>
-                          {error}
+                        <div>
+                          <div style={{ fontSize: 18, fontWeight: 700 }}>{result.item_name}</div>
+                          <div style={{ fontSize: 13, color: "#888", marginTop: 2 }}>Detected color: {result.detected_color}</div>
                         </div>
-                      )}
-
-                      {result && (
-                        <div className="fade-in" style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+                        <div style={{ backgroundColor: "#FAFAF8", borderRadius: 12, padding: "14px 16px", border: "1px solid #EDE7DF" }}>
+                          <div style={{ fontSize: 12, fontWeight: 700, color: "#6B3A2A", textTransform: "uppercase", letterSpacing: 1, marginBottom: 6 }}>Color Match: {result.color_match}</div>
+                          <p style={{ fontSize: 13, color: "#666", lineHeight: 1.6, margin: 0 }}>{result.color_explanation}</p>
+                        </div>
+                        <div style={{ backgroundColor: "#FAFAF8", borderRadius: 12, padding: "14px 16px", border: "1px solid #EDE7DF" }}>
+                          <div style={{ fontSize: 12, fontWeight: 700, color: "#6B3A2A", textTransform: "uppercase", letterSpacing: 1, marginBottom: 6 }}>Fit Assessment</div>
+                          <p style={{ fontSize: 13, color: "#666", lineHeight: 1.6, margin: 0 }}>{result.fit_assessment}</p>
+                        </div>
+                        <div style={{ backgroundColor: "#FAFAF8", borderRadius: 12, padding: "14px 16px", border: "1px solid #EDE7DF" }}>
+                          <div style={{ fontSize: 12, fontWeight: 700, color: "#6B3A2A", textTransform: "uppercase", letterSpacing: 1, marginBottom: 6 }}>Styling Tips</div>
+                          <p style={{ fontSize: 13, color: "#666", lineHeight: 1.6, margin: 0 }}>{result.styling_tips}</p>
+                        </div>
+                        {result.palette_colors_that_match?.length > 0 && (
                           <div>
-                            <VerdictBadge verdict={result.verdict} />
-                            <div style={{ marginTop: 8 }}>
-                              <ConfidenceMeter value={result.confidence} />
+                            <div style={{ fontSize: 12, fontWeight: 700, color: "#6B3A2A", textTransform: "uppercase", letterSpacing: 1, marginBottom: 8 }}>Pairs well with</div>
+                            <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
+                              {result.palette_colors_that_match.map((h, i) => <ColorSwatch key={i} hex={h} size={32} />)}
                             </div>
                           </div>
-
-                          <div>
-                            <div style={{ fontSize: 18, fontWeight: 700 }}>{result.item_name}</div>
-                            <div style={{ fontSize: 13, color: "#888", marginTop: 2 }}>Detected color: {result.detected_color}</div>
-                          </div>
-
-                          <div style={{ backgroundColor: "#FAFAF8", borderRadius: 12, padding: "14px 16px", border: "1px solid #EDE7DF" }}>
-                            <div style={{ fontSize: 12, fontWeight: 700, color: "#6B3A2A", textTransform: "uppercase", letterSpacing: 1, marginBottom: 6 }}>
-                              Color Match: {result.color_match}
-                            </div>
-                            <p style={{ fontSize: 13, color: "#666", lineHeight: 1.6, margin: 0 }}>{result.color_explanation}</p>
-                          </div>
-
-                          <div style={{ backgroundColor: "#FAFAF8", borderRadius: 12, padding: "14px 16px", border: "1px solid #EDE7DF" }}>
-                            <div style={{ fontSize: 12, fontWeight: 700, color: "#6B3A2A", textTransform: "uppercase", letterSpacing: 1, marginBottom: 6 }}>Fit Assessment</div>
-                            <p style={{ fontSize: 13, color: "#666", lineHeight: 1.6, margin: 0 }}>{result.fit_assessment}</p>
-                          </div>
-
-                          <div style={{ backgroundColor: "#FAFAF8", borderRadius: 12, padding: "14px 16px", border: "1px solid #EDE7DF" }}>
-                            <div style={{ fontSize: 12, fontWeight: 700, color: "#6B3A2A", textTransform: "uppercase", letterSpacing: 1, marginBottom: 6 }}>Styling Tips</div>
-                            <p style={{ fontSize: 13, color: "#666", lineHeight: 1.6, margin: 0 }}>{result.styling_tips}</p>
-                          </div>
-
-                          {result.palette_colors_that_match?.length > 0 && (
-                            <div>
-                              <div style={{ fontSize: 12, fontWeight: 700, color: "#6B3A2A", textTransform: "uppercase", letterSpacing: 1, marginBottom: 8 }}>Pairs well with</div>
-                              <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
-                                {result.palette_colors_that_match.map((h, i) => <ColorSwatch key={i} hex={h} size={32} />)}
-                              </div>
-                            </div>
-                          )}
-
-                          <button onClick={resetAnalyzer} style={{
-                            padding: "10px 24px", backgroundColor: "#EDE7DF", color: "#555", border: "none",
-                            borderRadius: 10, fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "inherit",
-                            alignSelf: "flex-start", marginTop: 4,
-                          }}>
-                            Analyze Another Item
-                          </button>
-                        </div>
-                      )}
-                    </div>
+                        )}
+                        <button onClick={resetAnalyzer} style={{
+                          padding: "10px 24px", backgroundColor: "#EDE7DF", color: "#555", border: "none",
+                          borderRadius: 10, fontSize: 13, fontWeight: 600, cursor: "pointer", fontFamily: "inherit",
+                          alignSelf: "flex-start", marginTop: 4,
+                        }}>Analyze Another Item</button>
+                      </div>
+                    )}
                   </div>
                 </div>
               )}
